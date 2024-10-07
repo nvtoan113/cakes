@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate Cake",
+        "description": "Rich chocolate cake with dark chocolate frosting",
+        "price": 15.99,
+        "stock": 20,
+        "category": "dessert",
+        "image": "/images/chocolate_cake.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Vanilla Sponge Cake",
+        "description": "Light and fluffy vanilla sponge cake with vanilla buttercream",
+        "price": 12.99,
+        "stock": 15,
+        "category": "dessert",
+        "image": "/images/vanilla_sponge_cake.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Red Velvet Cake",
+        "description": "Classic red velvet cake with cream cheese frosting",
+        "price": 18.99,
+        "stock": 10,
+        "category": "dessert",
+        "image": "/images/red_velvet_cake.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Lemon Drizzle Cake",
+        "description": "Zesty lemon cake with a sweet and tangy drizzle",
+        "price": 14.99,
+        "stock": 12,
+        "category": "dessert",
+        "image": "/images/lemon_drizzle_cake.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Carrot Cake",
+        "description": "Moist carrot cake with a hint of cinnamon and cream cheese frosting",
+        "price": 16.99,
+        "stock": 8,
+        "category": "dessert",
+        "image": "/images/carrot_cake.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cheesecake",
+        "description": "Smooth and creamy cheesecake with a buttery graham cracker crust",
+        "price": 19.99,
+        "stock": 5,
+        "category": "dessert",
+        "image": "/images/cheesecake.jpg"
+    }
+]
