@@ -1,0 +1,12 @@
+{
+  "name": "demo-1644",
+  "version": "1.0.0",
+  "main": "atn-toys-app.js",
+  "scripts": {
+    "start": "node atn-toys-app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
