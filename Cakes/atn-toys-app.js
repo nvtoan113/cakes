@@ -41,6 +41,7 @@ const server = http.createServer((req, res) => {
                 <html>
                 <head>
                     <title>Cakes</title>
+                    <link rel="stylesheet" type="text/css" href="/styles.css">  <!-- Liên kết đến CSS -->
                 </head>
                 <body>
                     <h1>List of Cakes</h1>
@@ -50,7 +51,7 @@ const server = http.createServer((req, res) => {
             // Tạo HTML cho từng loại bánh
             cakes.forEach(cake => {
                 htmlContent += `
-                    <div>
+                    <div class="cake">
                         <h2>${cake.name}</h2>
                         <p>${cake.description}</p>
                         <p>Price: $${cake.price}</p>
@@ -70,6 +71,43 @@ const server = http.createServer((req, res) => {
         });
     }
 });
+
+// Xử lý đường dẫn để xem chi tiết sản phẩm
+if (urlParts[1] === 'cake' && urlParts[2]) {
+    const cakeId = parseInt(urlParts[2]);  // Lấy id từ URL
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            res.writeHead(500);
+            res.end('<h1>Internal Server Error</h1>');
+            return;
+        }
+        const cakes = JSON.parse(data);
+        const cake = cakes.find(cake => cake.id === cakeId);
+
+        if (cake) {
+            // Tạo nội dung HTML chi tiết cho sản phẩm
+            let htmlContent = `
+                <html>
+                <head>
+                    <title>${cake.name}</title>
+                </head>
+                <body>
+                    <h1>${cake.name}</h1>
+                    <p>${cake.description}</p>
+                    <p>Price: $${cake.price}</p>
+                    <img src="/images/${cake.image.split('/').pop()}" alt="${cake.name}" width="200">
+                </body>
+                </html>
+            `;
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(htmlContent);
+        } else {
+            res.writeHead(404);
+            res.end('<h1>Product not found</h1>');
+        }
+    });
+    return;
+}
 
 server.listen(3000, () => {
     console.log('Server running at http://localhost:3000/');
