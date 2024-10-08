@@ -1,9 +1,9 @@
 {
   "name": "demo-1644",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "atn-toys-app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node atn-toys-app.js"
   },
   "keywords": [],
   "author": "",
