@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ATN Cakes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="font-family: 'Roboto', sans-serif; color: #007bff;">List of Cakes</h1>
+        <div id="cakes" class="row">
+            <!-- Chocolate Cake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/chocolate_cake.jpg" class="card-img-top img-fluid" alt="Chocolate Cake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Chocolate Cake</h5>
+                        <p class="card-text" style="color: #555;">Rich chocolate cake with dark chocolate frosting</p>
+                        <p class="text-muted">Price: $15.99</p>
+                        <a href="/cake/1" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vanilla Sponge Cake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/vanilla_sponge_cake.jpg" class="card-img-top img-fluid" alt="Vanilla Sponge Cake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Vanilla Sponge Cake</h5>
+                        <p class="card-text" style="color: #555;">Light and fluffy vanilla sponge cake with vanilla buttercream</p>
+                        <p class="text-muted">Price: $12.99</p>
+                        <a href="/cake/2" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Velvet Cake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/red_velvet_cake.jpg" class="card-img-top img-fluid" alt="Red Velvet Cake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Red Velvet Cake</h5>
+                        <p class="card-text" style="color: #555;">Classic red velvet cake with cream cheese frosting</p>
+                        <p class="text-muted">Price: $18.99</p>
+                        <a href="/cake/3" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lemon Drizzle Cake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/lemon_drizzle_cake.jpg" class="card-img-top img-fluid" alt="Lemon Drizzle Cake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Lemon Drizzle Cake</h5>
+                        <p class="card-text" style="color: #555;">Zesty lemon cake with a sweet and tangy drizzle</p>
+                        <p class="text-muted">Price: $14.99</p>
+                        <a href="/cake/4" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrot Cake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/carrot_cake.jpg" class="card-img-top img-fluid" alt="Carrot Cake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Carrot Cake</h5>
+                        <p class="card-text" style="color: #555;">Moist carrot cake with a hint of cinnamon and cream cheese frosting</p>
+                        <p class="text-muted">Price: $16.99</p>
+                        <a href="/cake/5" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cheesecake -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="/images/cheesecake.jpg" class="card-img-top img-fluid" alt="Cheesecake" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Roboto', sans-serif;">Cheesecake</h5>
+                        <p class="card-text" style="color: #555;">Smooth and creamy cheesecake with a buttery graham cracker crust</p>
+                        <p class="text-muted">Price: $19.99</p>
+                        <a href="/cake/6" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 ATN Cakes. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

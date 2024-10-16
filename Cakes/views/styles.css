@@ -1,0 +1,52 @@
+/* Custom Styles */
+
+
+/* Toàn bộ trang */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Tiêu đề trang */
+h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+/* Card Style */
+.card {
+  border: none;
+  border-radius: 10px; /* Viền bo tròn */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Để không bị tràn */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Hiệu ứng nổi lên khi hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút Xem Chi Tiết */
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838; /* Màu tối hơn khi hover */
+  transform: translateY(-2px); /* Hiệu ứng nổi lên khi hover */
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+

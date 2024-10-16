@@ -11,21 +11,21 @@
 
     <script>
         fetch('http://localhost:3000/')
-            .then(response => response.json())  // Lấy dữ liệu JSON từ server
+            .then(response => response.json())  
             .then(data => {
-                const cakesDiv = document.getElementById('cakes');  // Nơi sẽ hiển thị bánh
+                const cakesDiv = document.getElementById('cakes');  
                 data.forEach(cake => {
-                    const cakeDiv = document.createElement('div');  // Tạo div mới cho từng bánh
+                    const cakeDiv = document.createElement('div');  
                     cakeDiv.innerHTML = `
                         <h2>${cake.name}</h2>
                         <p>${cake.description}</p>
                         <p>Price: $${cake.price}</p>
                         <img src="${cake.image}" alt="${cake.name}" width="200">
                     `;
-                    cakesDiv.appendChild(cakeDiv);  // Thêm bánh vào trang
+                    cakesDiv.appendChild(cakeDiv);  
                 });
             })
-            .catch(error => console.error('Error fetching data:', error));  // Xử lý lỗi
+            .catch(error => console.error('Error fetching data:', error));  
     </script>
 </body>
 </html>
