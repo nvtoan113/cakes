@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Chocolate Cake",
         "description": "Rich chocolate cake with dark chocolate frosting",
-        "price": 15.99,
+        "price": 16.00,
         "stock": 20,
         "image": "/images/chocolate_cake.jpg",
         "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Eggs", "Butter", "Dark Chocolate"],
